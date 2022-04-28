@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介サイト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="img/background.png" id="body">
+    <div style="z-index: 100; padding: 10px; width: 99%; height: 99%; background-color: #ffffffc0;">
+        <p><h1 style="border-bottom: 4px solid rgb(57, 57, 57);">質素な自己紹介サイト</h1></p>
+    </div>
+        <div style="background-color: #ffffffb0; display: inline-block; width: 70%; line-height: 25px; top: 30px; position: relative;">
+            <p><h1 style="display: inline-block">お名前: Yubaさん<input type="button" id="button" onclick="button_()" style="display: inline-block;" value="🍣"></h1></p>
+            <p><h2>寿司を押すと背景が変わるよ！↑</h2></p>
+            <p><h2>N高7期生</h2></p>
+            <p><h2>アイコン⇨</h2></p>
+            <br>
+            <p><h1>趣味:</h1></p>
+            <p><h2>●プログラミング</h2></p>
+            <p><h3>中2から始めました。web関連が少しできます。<br>HTML,JS,CSS,PHP,Python,C#</h3></p>
+            <p><h2>●ドット絵</h2></p>
+            <p><h3>背景やアイコンは自作です</h3></p>
+            <p><h2>●作曲</h2></p>
+            <p><h3>まだまだ全然です(´・ω・)</h3></p>
+            <p><h2>●旅行</h2></p>
+            <p><h3>東北地方が好きです！</h3></p>
+        </div>
+        <img style="display: inline-block; position: absolute; width: 25%; right: 3%; top: 175px;" src="img/icon.png">
+</body>
+<script>
+    let body = document.getElementById("body");
+    let i = 0;
+    function button_()
+    {
+        if(i == 0)
+        {
+        body.background = "img/background.png";
+        i = 1;
+        }
+        else if(i == 1)
+        {
+        body.background = "img/background2.png";
+        i = 2;
+        }
+        else
+        {
+        body.background = "img/background3.png";
+        i = 0;
+        }
+    }
+</script>
+</html>

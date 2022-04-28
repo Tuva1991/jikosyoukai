@@ -1,0 +1,19 @@
+body
+{
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1
+{
+    font-size: 40px;
+}
+h2
+{
+    font-size: 30px;
+}
+h3
+{
+    font-size: 24px;
+}
